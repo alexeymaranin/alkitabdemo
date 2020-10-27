@@ -1,0 +1,367 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    -webkit-font-smoothing: antialiased;
+
+    background-color: #f9f9f9;
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+p {
+    margin: 0 0 10px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Header
+================*/
+
+.header {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    height: 100px;
+}
+
+.header__inner {
+    padding: 35px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #515369;
+    align-items: center;
+}
+
+/* Nav
+================*/
+
+.nav {
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: flex;
+}
+
+.nav__link {
+    margin-left: 50px;
+    color: #000;
+    text-decoration: none;
+    opacity: .65;
+
+    transition: opacity .2s linear;
+}
+
+.nav__link:first-child {
+    margin-left: 0;
+}
+
+.nav__link:hover {
+
+    opacity: 1;
+}
+
+/* Intro
+================*/
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    height: 720px;
+    padding-top: 100px;
+    background-color: #f9f9f9;
+    background-image: url("img/header.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+
+}
+
+/*
+.intro__inner {
+    max-width: 970px;
+    width: 100%;
+    margin: 0 auto;
+
+
+}
+*/
+
+.intro__title {
+    font-size: 80px;
+    color: #299499;
+    font-weight: 400;
+    line-height: 1.1;
+    margin-top: 100px;
+    margin-bottom: 10px;
+}
+
+.intro__title.bold {
+    font-weight: 700;
+   margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.intro__subtitle {
+    font-size: 30px;
+    font-weight: 400;
+    color: #0d4a4d;
+    line-height: 2.2;
+    margin-bottom: 20px;
+}
+
+/* Button
+================*/
+
+.btn {
+    display: inline-block;
+    vertical-align: top;
+    padding: 14px 40px;
+
+    border-radius: 20px;
+    border: 0;
+    cursor: pointer;
+    text-align: center;
+    font-size: 20px;
+    color: #299499;
+    font-weight: 400;
+    text-decoration: none;
+
+    transition: background .1s linear;
+}
+
+.btn-white {
+     background-color: #fff;
+}
+
+.btn-white:hover {
+    background-color: #299499;
+    color: #fff;
+}
+
+/* Latest courses
+================*/
+.latest{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 70px;
+
+}
+
+.latest__title {
+    text-align: center;
+    border-bottom: 3px solid #379ba0;
+    font-size: 36px;
+    font-weight: 700;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    margin-left: 300px;
+    margin-right: 300px;
+
+}
+
+.latest__inner {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.latest__item {
+    width: 33.33333%;
+
+    padding: 0 30px;
+    margin-bottom: 30px;
+
+}
+
+
+/* Course card
+================*/
+
+.course__card {
+    border-radius: 30px;
+    overflow: hidden;
+    cursor: pointer;
+
+    transition: box-shadow .2s linear;
+}
+
+.course__card:hover {
+    -webkit-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+-moz-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+
+}
+
+
+.card__img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.card__body {
+   padding: 20px;
+    background-color: #ffffff;
+    color: #444444;
+
+
+}
+
+.card__title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.card__info {
+    display: inline-block;
+    vertical-align: top;
+    padding: 5px 15px;
+    border-radius: 40px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.card__category {
+    color: #fff;
+    background-color: #52bfb6;
+}
+
+.card__language {
+    color: #52bfb6;
+    border-color: #52bfb6;
+    border: 1px solid;
+}
+
+.card__description {
+    font-size: 17px;
+    font-weight: 400;
+}
+
+
+/* Course card
+================*/
+
+.footer {
+    background-image: url("img/footer.png");
+    background-repeat: no-repeat;
+    background-position: center;
+/*    height: 170px;*/
+}
+
+.footer__inner{
+     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 0;
+    color: #fff;
+}
+
+.footer__item {
+    width: 25%;
+    text-align: center;
+    padding: 0 15px;
+}
+
+
+/* Social
+================*/
+
+.social {
+    display: flex;
+
+}
+
+.social--footer {
+    justify-content: center;
+}
+
+.social__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    margin-right: 4px;
+    background-color: #fff;
+
+    border: 1px solid #e8ecee;
+
+    transition: background .1s linear;
+}
+
+.social__item:hover {
+    background-color: #e8ecee;
+    cursor: pointer;
+}
+
+.social__item:hover .social__icon {
+    fill: #000;
+}
+
+.social__icon {
+    display: block;
+    height: 18px;
+    fill: #c6cacc;
+
+    transition: fill .1s linear;
+}
+
+.social--footer .social__item {
+    background-color: transparent;
+    border-width: 2px;
+    border-color: #fff;
+    border-radius: 2px;
+}
+
+.social--footer .social__icon {
+    fill: #fff;
+}
+
+.social--footer .social__item:hover  {
+    background-color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
