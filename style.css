@@ -59,7 +59,7 @@ p {
     margin-left: 50px;
     color: #000;
     text-decoration: none;
-    opacity: .45;
+    opacity: .65;
 
     transition: opacity .2s linear;
 }
