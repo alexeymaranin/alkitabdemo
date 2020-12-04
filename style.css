@@ -18,6 +18,10 @@ p {
     margin: 0 0 10px;
 }
 
+a {
+    text-decoration: none;
+}
+
 .container {
     width: 100%;
     max-width: 1200px;
@@ -210,6 +214,34 @@ p {
 .btn-login-register {
     padding: 10px 20px;
     font-size: 15px;
+}
+
+.btn-course {
+    background-color: #299499;
+    color: #fff;
+    padding: 10px 20px;
+    border: 1px solid;
+    border-color: #299499;
+    border-radius: 9px;
+}
+
+
+
+.btn-course.new {
+    background-color: #0bc27f;
+    border-color: #0bc27f;
+}
+
+.btn-course.controls {
+    background-color: #5f6e68;
+    border-color: #5f6e68;
+}
+
+.btn-course:hover {
+    background-color: #fff;
+    color: #299499;
+    border: 1px solid;
+    border-color: #299499;
 }
 
 /* Latest courses
@@ -622,11 +654,236 @@ box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
 
 
 
+/*#########################  course.html   ##################################*/
 
+.course__title{
+    margin-top: 100px;
+    height: 150px;
+    background-color: #299499;
+    color: #f8f8f8;
+    display: flex;
+    align-items: center;
+}
 
+.course__content {
+    margin-bottom: 100px;
+}
 
+.course__title .title__text {
+    font-size: 60px;
+    font-weight: 700;
+}
 
+.info__inner {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
 
+.info__item {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 15px;
+
+}
+
+.info__mentorimg {
+    margin-right: 20px;
+    max-width: 60px;
+}
+
+.info__buttons {
+    display: flex;
+}
+
+.course__content {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 20px;
+}
+
+.course__left {
+    width: 65%;
+    padding-right: 20px;
+}
+
+.course__right {
+    width: 35%;
+    padding-left: 20px;
+
+}
+
+.course_img {
+    width: 100%;
+    border-radius: 9px;
+}
+
+.course__extra {
+    margin-top: 30px;
+
+    padding-bottom: 0px;
+}
+
+.extra__nav {
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #299499;
+}
+
+.extra__nav__item {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 10px;
+    color: #bcbebf;
+    font-size: 20px;
+
+    transition: color .1s linear;
+}
+
+.extra__nav__item:first-child {
+    padding-left: 0px;
+}
+
+.extra__nav__item:hover {
+    cursor: pointer;
+    color: #000;
+}
+
+.extra__nav__item.extra__active {
+    border-bottom: 2px solid #299499;
+    color: #000;
+}
+
+.extra__content {
+    margin-top: 20px;
+}
+
+.extra__description {
+
+}
+
+.content__lesson {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.extra__lessons {
+    display: none;
+}
+
+.description__title {
+    font-size: 25px;
+    font-weight: 800;
+    color: #444444;
+}
+
+.description__text {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.content__title {
+    font-size: 25px;
+    font-weight: 800;
+    color: #444444;
+}
+
+.control__buttons {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 4px;
+}
+
+.cb__item {
+    margin-right: 10px;
+}
+
+.course__features{
+    margin-top: 20px;
+}
+
+.features__title {
+    font-size: 29px;
+    font-weight: 800;
+    color: #3f4a4d;
+    border-bottom: 3px solid #299499;
+    padding-bottom: 5px;
+}
+
+.features__content {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.features__item {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.features__left {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.features__name {
+    margin-left: 20px;
+    font-size: 23px;
+    font-weight: 500;
+    padding-bottom: 5px;
+}
+
+.features__variable {
+    font-size: 23px;
+    font-weight: 500;
+}
+
+.course__recommend {
+
+}
+
+.recommend__item {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    align-items: center;
+
+    transition: box-shadow .2s linear;
+
+}
+
+.recommend__item:hover {
+        cursor: pointer;
+     -webkit-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+-moz-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+
+    }
+
+.recommend__img {
+    width: 78px;
+    height: 78px;
+}
+
+.recomment__name {
+    font-size: 23px;
+    font-weight: 500;
+    color: #3d4c50;
+    margin-left: 20px;
+    width: 70%;
+}
 
 
 /* Media
@@ -674,6 +931,22 @@ box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
     .login__body {
         padding-left: 40px;
         padding-right: 40px;
+    }
+
+    .course__title{
+        padding-left: 30px;
+    }
+    .course__content{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .features__name, .features__variable {
+        font-size: 20px;
+    }
+
+    .recomment__name {
+        width: 60%;
     }
 
 }
@@ -782,6 +1055,113 @@ box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
         padding: 15px;
     }
 
+    .course__title{
+        padding-left: 20px;
+    }
+    .course__content{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .course__title {
+        height: 80px;
+        margin-top: 70px;
+    }
+
+    .course__title .title__text {
+        font-size: 40px;
+    }
+
+    .info__inner {
+        padding-bottom: 15px;
+    }
+
+    .info__item {
+        font-size: 11px;
+    }
+
+    .info__mentorimg {
+        width: 35px;
+    }
+
+    .course__left {
+        padding-right: 10px;
+    }
+
+    .course__right {
+    padding-left: 10px;
+}
+    .btn-course {
+        padding: 5px 10px;
+    }
+
+    .course__extra {
+        margin-top: 15px;
+    }
+
+    .extra__nav__item {
+        font-size: 17px;
+    }
+
+    .extra__content {
+        margin-top: 10px;
+    }
+
+    .content__lesson {
+        font-size: 17px;
+        margin-top: 6px;
+    }
+
+    .description__title , .content__title {
+        font-size: 23px;
+    }
+
+    .description__text {
+        margin-top: 8px;
+        font-size: 17px;
+    }
+
+    .course__features{
+        margin-top: 10px;
+    }
+
+    .features__title {
+        font-size: 23px;
+    }
+
+    .features__content {
+        margin-bottom: 0px;
+    }
+
+    .features__item {
+        margin-bottom: 25px;
+    }
+
+    .features__name {
+        margin-left: 10px;
+        font-size: 18px;
+    }
+
+    .features__variable {
+        font-size: 18px;
+    }
+
+    .recommend__item {
+        margin-top: 20px;
+    }
+
+
+
+    .recommend__img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .recomment__name {
+        font-size: 18px;
+    }
+
+
 }
 
 @media (max-width: 730px) {
@@ -792,6 +1172,10 @@ box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
     .course__item {
         width: 50%;
         padding: 10px;
+    }
+
+    .btn-course {
+        font-size: 13px;
     }
 }
 
@@ -999,6 +1383,97 @@ box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
         font-size: 15px;
     }
 
+    .btn-course {
+        padding: 5px 5px;
+        font-size: 10px;
+    }
+
+    .info__inner {
+        padding-bottom: 10px;
+    }
+
+    .info__item {
+        font-size: 9px;
+    }
+
+    .info__mentorimg {
+        margin-right: 10px;
+        width: 26px
+    }
+
+    .course__title {
+        margin-top: 60px;
+        height: 60px;
+    }
+
+    .course__title .title__text {
+    font-size: 30px;
+}
+    .course__content {
+        padding-top: 10px;
+    }
+
+    .course__extra {
+        margin-top: 10px;
+    }
+
+    .extra__nav__item {
+        font-size: 15px;
+        padding-bottom: 5px;
+    }
+
+    .extra__content {
+        margin-top: 5px;
+    }
+
+    .description__title, .content__title {
+        font-size: 18px;
+    }
+
+    .description__text {
+        margin-top: 5px;
+        font-size: 14px;
+    }
+
+    .control__buttons {
+        margin-top: 0px;
+    }
+
+    .course__features {
+        margin-top: 5px;
+    }
+
+    .features__title {
+        font-size: 18px;
+        padding-bottom: 2px;
+        border-bottom: 2px solid #299499;
+    }
+
+    .features__content {
+        margin-top: 10px;
+    }
+
+    .features__item {
+        margin-bottom: 10px;
+    }
+
+    .features__name, .features__variable {
+        font-size: 13px;
+    }
+
+    .recommend__item {
+        margin-top: 10px;
+    }
+
+    .recommend__img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .recomment__name {
+        font-size: 13px;
+        margin-left: 10px;
+    }
 
 }
 
@@ -1183,7 +1658,118 @@ box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
         font-size: 15px;
     }
 
+    .course__content {
+        display: block;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
 
+    .course__title  {
+        text-align: center;
+        padding-left: 0px;
+    }
+
+
+    .course__left , .course__right {
+        width: 100%;
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+
+    .btn-course {
+        padding: 10px 20px;
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+
+
+    .info__inner {
+        flex-wrap: wrap;
+    }
+
+    .info__item {
+        width: 100%;
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 5px;
+        padding-left: 10px;
+
+    }
+
+    .info__item.info__buttons {
+        justify-content: center;
+        margin-top: 10px;
+        padding-left: 0;
+    }
+
+    .item__data {
+        display: flex;
+        text-align: center;
+    }
+
+    .info__mentorimg {
+        position: absolute;
+        width: 40px;
+        right: 0;
+    }
+
+    .item__text {
+        margin-left: 20px;
+    }
+
+    .course__extra {
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-bottom: 15px;
+    }
+
+    .extra__nav__item {
+        font-size: 15px;
+    }
+
+    .description__title , .content__title {
+        font-size: 22px;
+        margin-top: 10px;
+    }
+
+    .description__text {
+        font-size: 18px;
+    }
+
+    .course__features {
+        margin-top: 10px;
+    }
+
+    .features__title {
+        font-size: 25px;
+    }
+
+    .features__item {
+        margin-bottom: 15px;
+        padding-right: 10px;
+    }
+
+    .features__name , .features__variable {
+        font-size: 24px;
+    }
+
+    .features__name {
+        margin-left: 20px;
+    }
+
+    .recommend__item {
+        padding-left: 10px;
+    }
+
+    .recommend__img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .recomment__name {
+         font-size: 25px;
+    }
 
 }
 
