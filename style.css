@@ -599,9 +599,12 @@ box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
 
 /*#########################  login.html   ###################################*/
 
-.login {
-    margin-top: 150px;
+.login__Hinner {
+    border-bottom: 1px solid #299499;
+}
 
+.login {
+    margin-top: 190px;
 }
 
 .login__inner {
