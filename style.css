@@ -42,7 +42,7 @@ a {
 }
 
 .header__inner {
-    padding: 35px;
+    padding: 25px;
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid #515369;
@@ -126,7 +126,7 @@ a {
     height: 720px;
     padding-top: 100px;
     background-color: #f9f9f9;
-    background-image: url("img/header.png");
+    background-image: url("img/new_header.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -146,7 +146,7 @@ a {
 
 .intro__title {
     font-size: 80px;
-    color: #299499;
+    color: #ffffff;
     font-weight: 400;
     line-height: 1.1;
     margin-top: 100px;
@@ -162,7 +162,7 @@ a {
 .intro__subtitle {
     font-size: 30px;
     font-weight: 400;
-    color: #0d4a4d;
+    color: #ffffff;
     line-height: 2.2;
     margin-bottom: 20px;
 }
@@ -194,6 +194,7 @@ a {
 .btn-white:hover {
     background-color: #299499;
     color: #fff;
+    border: 1px solid #fff;
 }
 
 .btn-login {
@@ -606,19 +607,28 @@ box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
 .login__inner {
     display: flex;
     flex-wrap: wrap;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 .login__image {
-    width: 35%;
+    width: 43%;
+
+}
+
+.login__img {
+    width: 100%;
+    height: 600px;
     overflow: hidden;
 }
 
 .login__body {
-    width: 65%;
-    padding-left: 80px;
+    width: 57%;
+/*    padding-left: 80px;*/
     padding-right: 80px;
-    padding-top: 170px;
+    padding-top: 120px;
     background-color: #fff;
+
 }
 
 .login__title {
@@ -924,8 +934,8 @@ box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
     }
 
     .login {
-        margin-left: 50px;
-        margin-right: 50px;
+        margin-top: 90px;
+
     }
 
     .login__body {
@@ -1048,6 +1058,11 @@ box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
 
     .nav__category.active {
         padding-left: 18px;
+    }
+
+    .login__inner{
+        padding-left: 5px;
+        padding-right: 5px;
     }
 
     .course__item {
@@ -1621,18 +1636,28 @@ box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
     }
 
     .login__inner {
-        display: block;
+/*        display: block;*/
+        display: flex;
+        background-color: #299499;
+        min-height: 600px;
     }
 
     .login__image {
+/*
         width: 100%;
         height: 670px;
         position: relative;
+*/
+        display: none;
+    }
+
+    .login__input {
+        border: 1px solid #299499;
     }
 
     .login__body {
         width: auto;
-        position: absolute;
+/*        position: absolute;*/
         top: 100px;
         left: 0;
         padding-top: 60px;
