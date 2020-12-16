@@ -9,10 +9,13 @@ $(function() {
     let scrollPos = $(window).scrollTop();
     let nav = $("#nav");
     let navToggle = $("#navToggle");
-    let description = $("#description")
-    let content = $("#content")
-    let contentContent = $("#contentContent")
-    let descriptionContent = $("#descriptionContent")
+    let description = $("#description");
+    let content = $("#content");
+    let contentContent = $("#contentContent");
+    let descriptionContent = $("#descriptionContent");
+    let progressNav = $("#progressNav");
+    let navProgressBtn = $("#navProgressBtn");
+
 
 
 
@@ -45,7 +48,12 @@ $(function() {
         description.addClass("extra__active");
     });
 
+    navProgressBtn.on("click", function(event) {
+        event.preventDefault();
 
+        progressNav.toggleClass("active");
+        navProgressBtn.toggleClass("active");
+    });
 
 })
 

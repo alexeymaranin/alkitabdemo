@@ -89,7 +89,7 @@ a {
     display: block;
     width: 30px;
     height: 3px;
-    background-color: #299499;
+    background-color: #000;
     font-size: 0;
     color: transparent;
     position: relative;
@@ -100,7 +100,7 @@ a {
     content: "";
     width: 100%;
     height: 100%;
-    background-color: #299499;
+    background-color: #000;
     position: absolute;
     left: 0;
     z-index: 1;
@@ -498,6 +498,7 @@ box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
     margin-top: 20px;
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 100px;
 }
 
 .courses__nav {
@@ -605,6 +606,7 @@ box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
 
 .login {
     margin-top: 190px;
+    margin-bottom: 200px;
 }
 
 .login__inner {
@@ -899,6 +901,299 @@ box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
 }
 
 
+/*#########################  progress.html   ###############################*/
+
+.progress__inner {
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+}
+
+.progress__nav {
+    width: 25%;
+    display: block;
+}
+
+.nav__button {
+    display: none;
+}
+
+.back__btn {
+    background-color: #3f4a4d;
+    display: flex;
+    height: 60px;
+    align-items: center;
+    padding-left: 15px;
+}
+
+.back__btn__img {
+    width: 28px;
+    height: 28px;
+}
+
+.back__btn__title {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: 15px;
+}
+
+.progress__nav__container {
+    padding: 15px;
+}
+
+.progress__title {
+    color: #3f4a4d;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.progress__bar {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.bar__complete {
+    border-bottom: 5px solid #299499;
+    width: 30%;
+}
+
+.bar__incomplete {
+    border-bottom: 5px solid #91c6c9;
+    width: 70%;
+}
+
+.progress__complete {
+    color: #3f4a4d;
+    font-size: 16px;
+}
+
+.progress__lesson {
+    margin-top: 20px;
+}
+
+.progress__lesson__title {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #d1d1d1;
+    margin-bottom: 10px;
+}
+
+.lesson__title {
+    font-size: 20px;
+    color: #3f4a4d;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+
+.lesson__title__circle {
+    margin-right: 5px;
+}
+
+.lesson__themes__count {
+    font-size: 20px;
+}
+
+.lesson__arrow {
+    margin-left: 20px;
+    display: none;
+}
+
+.lesson__themes {
+    padding-left: 25px;
+}
+
+.theme__item {
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.theme__circle {
+    margin-right: 5px;
+    width: 12px;
+    height: 12px;
+}
+
+.theme__title {
+    font-size: 20px;
+    color: #3f4a4d;
+    display: flex;
+    align-items: center;
+}
+
+.theme__info {
+    margin-left: 25px;
+    margin-top: 5px;
+    font-size: 10px;
+    color: #a0a0a0;
+    text-transform: uppercase;
+
+}
+
+.theme__info__item {
+    display: flex;
+}
+
+.theme__info__title {
+    margin-left: 5px;
+}
+
+.progress__content {
+    width: 75%;
+
+}
+
+.theme__content {
+    border-left: 3px solid #b7b7b7;
+}
+
+.progress__buttons {
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.change__lecture {
+    width: 50%;
+    height: 60px;
+    border-left: 2px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 15px;
+}
+
+.change__lecture.prev {
+    background-color: #3f4a4d;
+}
+
+.prev_lecture_img {
+    margin-right: 10px;
+    margin-top: 4px;
+}
+
+.change__lecture.next {
+    background-color: #299499;
+}
+
+.next_lecture_img {
+    margin-top: 4px;
+    margin-left: 10px;
+}
+
+.change__lecture:hover {
+    cursor: pointer;
+}
+
+.video__iframe {
+    height: 700px;
+    width: 95%;
+}
+
+.theme__video {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.theme__container {
+    margin-top: 50px;
+    padding: 0px 160px;
+}
+
+
+
+.question__title {
+    color: #3f4a4d;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.quiz__answers {
+    margin-top: 30px;
+}
+
+.answer {
+    display: flex;
+    padding: 15px;
+    border: 1px solid #c5c5c5;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.radio {
+  transform:scale(3);
+  opacity:0.9;
+  cursor:pointer;
+    margin-left: 10px;
+}
+
+.answer__text {
+    font-size: 18px;
+    color: #4c5658;
+    margin-left: 25px;
+}
+
+
+
+.theme__image__img {
+    width: 100%;
+}
+
+.theme__text {
+    color: #3f4a4d;
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media
+================*/
+/*#######################      1300px     ###################################*/
+
+@media (max-width: 1300px) {
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
 /* Media
 ================*/
 /*#######################      1200px     ###################################*/
@@ -960,6 +1255,31 @@ box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
 
     .recomment__name {
         width: 60%;
+    }
+    /*#########################  progress.html   ###########################*/
+    .progress__inner {
+        margin-top: 80px;
+    }
+
+    .back__btn {
+        height: 50px;
+    }
+
+    .lesson__title {
+        font-size: 18px;
+    }
+
+    .change__lecture {
+        height: 50px;
+    }
+
+    .video__iframe {
+        height: 500px;
+    }
+
+    .theme__container {
+        padding: 0 80px;
+        margin-top: 20px;
     }
 
 }
@@ -1179,9 +1499,104 @@ box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
         font-size: 18px;
     }
 
+    /*#########################  progress.html   #######################*/
+    .progress__inner {
+        margin-top: 70px;
+    }
+
+    .back__btn {
+        height: 40px;
+    }
+
+    .back__btn__title {
+        font-size: 13px;
+        margin-left: 8px;
+    }
+
+    .progress__nav__container {
+        padding: 10px;
+    }
+
+    .progress__title {
+        font-size: 21px;
+    }
+
+    .progress__bar {
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+
+    .progress__complete {
+        font-size: 14px;
+    }
+
+    .progress__lesson {
+        margin-top: 10px;
+    }
+
+    .progress__lesson__title {
+        padding-bottom: 5px;
+        margin-bottom: 5px;
+    }
+
+    .lesson__title {
+        font-size: 15px;
+    }
+
+    .lesson__themes__count {
+        font-size: 12px;
+    }
+
+    .lesson__themes {
+        padding-left: 15px;
+    }
+
+    .theme__title {
+        font-size: 13px;
+    }
+
+    .theme__info {
+        font-size: 8px;
+    }
+
+    .change__lecture {
+        height: 40px;
+        font-size: 13px
+    }
+
+    .video__iframe {
+        height: 300px;
+    }
+
+    .theme__container {
+        padding: 0 40px;
+    }
+
+    .question__title {
+        font-size: 20px;
+    }
+
+    .quiz__answers {
+        margin-top: 15px;
+    }
+
+    .answer {
+        padding: 8px;
+        margin-bottom: 10px;
+    }
+
+    .radio {
+        transform:scale(2.5);
+    }
+
+    .answer__text {
+        font-size: 15px
+    }
 
 }
 
+
+/*#######################      730px      ###################################*/
 @media (max-width: 730px) {
     .nav__category {
         font-size: 20px;
@@ -1195,6 +1610,9 @@ box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
     .btn-course {
         font-size: 13px;
     }
+
+
+
 }
 
 
@@ -1207,20 +1625,23 @@ box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
     }
 
     .nav {
-    display: none;
+        display: none;
         position: absolute;
         right: 0;
         padding-right: 20px;
         top: 65%;
         flex-direction: column;
-        width: 50%;
         text-align: right;
         background-color: #299499;
         padding-bottom: 10px;
+        border: 2px solid #fff;
+        border-radius:10px;
 
 }
     .nav.show {
         display: flex;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
     }
 
 .nav__link {
@@ -1228,6 +1649,7 @@ box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
     color: white;
     font-size: 22px;
     font-weight: 400;
+    text-shadow: 2px 2px 2px black;
 }
 
     .burger {
@@ -1270,6 +1692,9 @@ box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
     .btn {
         font-size: 12px;
         padding: 8px 15px;
+        -webkit-box-shadow: 5px 5px 22px -5px rgba(34, 60, 80, 0.6);
+-moz-box-shadow: 5px 5px 22px -5px rgba(34, 60, 80, 0.6);
+box-shadow: 5px 5px 22px -5px rgba(34, 60, 80, 0.6);
     }
 
     .latest {
@@ -1288,8 +1713,16 @@ box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
         padding: 0 3px;
     }
 
+    .course__card {
+    -webkit-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+-moz-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+
+}
+
     .card__body {
         padding: 10px;
+
     }
 
     .card__title {
@@ -1492,6 +1925,82 @@ box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
         font-size: 13px;
         margin-left: 10px;
     }
+    /*#########################  progress.html   ##########################*/
+
+    .progress__nav {
+        display: none;
+    }
+
+    .progress__content {
+        width: 100%;
+    }
+
+    .change__lecture:first-child {
+        border-left: 0;
+    }
+
+    .nav__button {
+        width: 60px;
+        position: fixed;
+        display: block;
+        top: 120px;
+        background-color: rgba(255,255,255, 0.5);
+        border: 2px solid #299499;
+    }
+
+    .nav__button.active {
+        left: 70%;
+    }
+
+    .progress__nav.active {
+        display: block;
+        position: fixed;
+        top: 110px;
+        background-color: #fff;
+        border: 3px solid #3f4a4d;
+        border-radius: 10px;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        width: 70%;
+        z-index: 9999;
+    }
+
+    .progress__title {
+        font-size: 28px;
+    }
+
+    .lesson__title {
+        font-size: 18px;
+    }
+
+    .lesson__themes__count {
+        font-size: 18px;
+    }
+
+    .theme__title {
+        font-size: 16px;
+    }
+
+    .theme__text {
+        font-size: 15px;
+    }
+
+    .question__title {
+        font-size: 18px;
+    }
+
+    .answer__text {
+        font-size: 14px;
+    }
+
+    .theme__container {
+        padding: 0 10px;
+    }
+
+    .video__iframe {
+        padding: 0 10px;
+        width: 100%;
+    }
 
 }
 
@@ -1511,12 +2020,14 @@ box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
     height: 420px;
     padding-top: 0px;
     padding-left: 10px;
+    background-image: url("img/new_header_small.png");
     }
 
     .intro__title {
     font-size: 45px;
     margin-bottom: 15px;
         margin-top: 100px;
+        text-shadow: 3px 3px 3px black, 0 0 1em black;
     }
 
     .intro__title.bold {
@@ -1526,6 +2037,7 @@ box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
     .intro__subtitle {
         font-size: 25px;
         margin-bottom: 10px;
+        text-shadow: 3px 3px 3px black, 0 0 1em black;
     }
 
 
@@ -1602,7 +2114,8 @@ box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
 
 /*  Courses page  */
     .courses {
-        padding-top: 45px
+        padding-top: 45px;
+        margin-bottom: 0;
     }
 
     .courses__nav {
@@ -1636,6 +2149,7 @@ box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
         margin-left: 0px;
         margin-right: 0px;
         margin-top: 70px;
+        margin-bottom: 0;
     }
 
     .login__inner {
