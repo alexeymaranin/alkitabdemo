@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
-    <title>Log in</title>
+    <title>Register</title>
 </head>
 <body>
 
@@ -51,27 +51,73 @@
 
 <div class="login">
     <div class="container">
-        <div class="login__inner">
-            <div class="login__image">
-                <img class="login__img" src="img/new_login_img2.png" alt="">
+        <div class="register__inner">
+            <div class="register__image">
+                <img class="register__img" src="img/new_login_img2.png" alt="">
             </div>
 
-            <div class="login__body">
-                <div class="login__title">welcome back</div>
-                <div class="login__form">
-                    <div class="form__title">EMAIL</div>
-                    <input class="login__input" type="text" size="40">
-                </div>
-                <div class="login__form">
-                    <div class="form__title">PASSWORD</div>
-                    <input class="login__input" type="text" size="40">
-                </div>
-                <div class="login__buttons">
-                    <a href="#" class="btn btn-login">Log in</a>
-                    <a href="register.html" class="btn btn-login-register">register now</a>
-                </div>
-            </div>
-        </div>
+            <div class="register__body">
+                <div class="register__title"><div>Registration</div></div>
+                <div class="register__forms">
+                    <div class="register__user">
+                        <div class="register__form">
+                            <div class="form__title">LOGIN</div>
+                            <input class="login__input" type="text" size="40">
+                        </div>
+                        <div class="register__form">
+                            <div class="form__title">EMAIL</div>
+                            <input class="login__input" type="text" size="40">
+                        </div>
+                        <div class="register__form">
+                            <div class="form__title">PASSWORD</div>
+                            <input class="login__input" type="text" size="40">
+                        </div>
+                        <div class="register__form">
+                            <div class="form__title">REPEAT PASSWORD</div>
+                            <input class="login__input" type="text" size="40">
+                        </div>
+                    </div>
+                    <div class="register__person">
+                        <div class="register__form">
+                            <div class="form__title">FIRST NAME</div>
+                            <input class="login__input" type="text" size="40">
+                        </div>
+                        <div class="register__form">
+                            <div class="form__title">LAST NAME</div>
+                            <input class="login__input" type="text" size="40">
+                        </div>
+                        <div class="register__form">
+                            <div class="form__title">COUNTRY</div>
+                            <select class="form__select" name="country" id="">
+                                <option value="rus">RUSSIA</option>
+                                <option value="uz">UZBEKISTAN</option>
+                            </select>
+                        </div>
+                        <div class="register__form">
+                            <div class="form__title">LANGUAGE</div>
+                            <select class="form__select" name="country" id="">
+                                <option value="rus">RUSSIAN</option>
+                                <option value="uz">UZBEK</option>
+                            </select>
+                        </div>
+                        <div class="register__form">
+                            <div class="form__title">SEX</div>
+                            <select class="form__select" name="country" id="">
+                                <option value="rus">MALE</option>
+                                <option value="uz">FEMALE</option>
+                            </select>
+                        </div>
+                        <div class="register__form">
+                            <div class="form__title">AGE</div>
+                            <input class="login__input" type="number">
+                        </div>
+                        <div class="register__button">
+                            <a href="#" class="btn btn-login register">Register</a>
+                        </div>
+                    </div> <!--     register__person               -->
+                </div> <!--      register__forms              -->
+            </div> <!--        register__body            -->
+        </div> <!--        register__inner            -->
     </div>
 </div>
 
