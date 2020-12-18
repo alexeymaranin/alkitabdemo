@@ -11,6 +11,11 @@ $(function() {
     let navToggle = $("#navToggle");
     let description = $("#description");
     let content = $("#content");
+    let mycoursesInprogress = $("#mycoursesInprogress");
+    let mycoursesFinished = $("#mycoursesFinished");
+
+    let finished = $("#finished");
+    let inprogress = $("#inprogress");
     let contentContent = $("#contentContent");
     let descriptionContent = $("#descriptionContent");
     let progressNav = $("#progressNav");
@@ -53,6 +58,26 @@ $(function() {
 
         progressNav.toggleClass("active");
         navProgressBtn.toggleClass("active");
+    });
+
+    finished.on("click", function(event) {
+        event.preventDefault();
+
+        mycoursesInprogress.addClass("hide");
+        mycoursesFinished.addClass("showFlex");
+        finished.addClass("extra__active");
+        inprogress.removeClass("extra__active");
+
+
+    });
+
+    inprogress.on("click", function(event) {
+        event.preventDefault();
+
+        mycoursesFinished.removeClass("showFlex");
+        mycoursesInprogress.removeClass("hide");
+        finished.removeClass("extra__active");
+        inprogress.addClass("extra__active");
     });
 
 })

@@ -43,6 +43,7 @@ a {
 
 .header__inner {
     padding: 25px;
+/*    padding-left: 0;*/
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid #515369;
@@ -57,6 +58,7 @@ a {
     font-weight: 700;
     text-transform: uppercase;
     display: flex;
+    align-items: center;
 }
 
 .nav__link {
@@ -126,7 +128,7 @@ a {
     height: 720px;
     padding-top: 100px;
     background-color: #f9f9f9;
-    background-image: url("img/new_header.png");
+    background-image: url("img/new_header_low.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -151,6 +153,7 @@ a {
     line-height: 1.1;
     margin-top: 100px;
     margin-bottom: 10px;
+    text-shadow: 2px 2px 2px black;
 }
 
 .intro__title.bold {
@@ -165,6 +168,7 @@ a {
     color: #ffffff;
     line-height: 2.2;
     margin-bottom: 20px;
+    text-shadow: 2px 2px 2px black;
 }
 
 /* Button
@@ -189,6 +193,8 @@ a {
 
 .btn-white {
      background-color: #fff;
+    text-shadow: 1px 1px 1px #299499;
+    box-shadow: 1px 1px 1px black;
 }
 
 .btn-white:hover {
@@ -836,6 +842,7 @@ box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
 
 .extra__content {
     margin-top: 20px;
+
 }
 
 .extra__description {
@@ -849,6 +856,8 @@ box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
 
 .extra__lessons {
     display: none;
+
+
 }
 
 .description__title {
@@ -1215,17 +1224,86 @@ box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
     font-size: 20px;
 }
 
+/*#########################  mycourses.html   ############################*/
+
+
+.mycourses {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.mycourses__header {
+    background-color: #299499;
+    padding-top: 20px;
+}
+
+.mycourses__title {
+    font-size: 35px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.mycourses__nav {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.mycourses__nav__item {
+    font-size: 18px;
+    color: #fff;
+    margin-right: 35px;
+    cursor: pointer;
+    border-bottom: 5px solid #299499;
+
+    transition: border linear .2s;
+}
+
+.mycourses__nav__item.extra__active {
+    border-bottom: 5px solid #fff;
+}
+
+.mycourses__content {
+    min-height: 600px;
+}
+
+.mycourses_inprogress {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.mycourses_inprogress.hide {
+    display: none;
+}
+
+.mycourse__item {
+    width: 33.33333%;
+    padding: 20px 30px;
+    padding-bottom: 0px;
+}
 
 
 
+.mycourse__progress__bar {
+    display: flex;
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
 
+.bar__complete.my__complete {
+    border-bottom: 7px solid #52bfb6;
+    border-radius: 5px;
+}
 
+.bar__incomplete.my__incomplete {
+    border-bottom: 7px solid #ebebeb;
+    border-radius: 5px;
+}
 
-
-
-
-
-
+.showFlex {
+    display: flex;
+    flex-wrap: wrap;
+}
 
 
 
@@ -1344,6 +1422,26 @@ box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
     .theme__container {
         padding: 0 80px;
         margin-top: 20px;
+    }
+
+    /*#########################  mycourses.html   ###########################*/
+    .mycourses {
+        margin-top: 80px;
+    }
+
+    .mycourses__header {
+        padding-left: 30px;
+        padding-top: 10px;
+    }
+
+    .mycourses__title {
+        margin-bottom: 10px;
+    }
+
+    .mycourse__item {
+        padding: 15px 15px;
+        padding-bottom: 0px;
+
     }
 
 }
@@ -1670,6 +1768,31 @@ box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
     .register__title {
         display: flex;
         justify-content: center;
+    }
+
+    /*#########################  mycourses.html   ###########################*/
+    .mycourses {
+        margin-top: 80px;
+    }
+
+    .mycourses__header {
+        padding-left: 20px;
+        padding-top: 10px;
+    }
+
+    .mycourses__title {
+        margin-bottom: 10px;
+    }
+
+    .mycourse__item {
+        padding: 10px 10px;
+        padding-bottom: 0px;
+        padding-left: 0;
+
+    }
+
+    .mycourses__content {
+        padding-left: 10px;
     }
 
 
@@ -2093,6 +2216,14 @@ box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
         margin: 0;
     }
 
+    /*#########################  mycourses.html   ###########################*/
+    .mycourse__item {
+        width: 50%;
+        padding: 20px 10px;
+        padding-bottom: 0px;
+        padding-left: 0;
+    }
+
 }
 
 /*#######################      514px      ###################################*/
@@ -2111,7 +2242,7 @@ box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
     height: 420px;
     padding-top: 0px;
     padding-left: 10px;
-    background-image: url("img/new_header_small.png");
+    background-image: url("img/new_header_small_low.png");
     }
 
     .intro__title {
@@ -2421,6 +2552,18 @@ box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
     .register {
         width: 200px;
     }
+
+    /*#########################  mycourses.html   ###########################*/
+    .mycourse__item {
+        width: 100%;
+        padding: 10px 20px;
+    }
+
+    .mycourses__content {
+        padding-left: 0px;
+    }
+
+
 
 }
 
