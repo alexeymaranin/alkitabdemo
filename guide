@@ -1,0 +1,12 @@
+<div class="collapse">
+    <div class="collapsible">Open collaps</div>
+    <div class="collaps__content">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis nam saepe consequatur placeat mollitia laborum iusto, tempore repellendus nemo ea sit, voluptate esse voluptates consectetur asperiores quis voluptatibus rerum eaque?</p>
+    </div>
+</div>
+<div class="collapse">
+    <div class="collapsible">Open collaps 2</div>
+    <div class="collaps__content">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis nam saepe consequatur placeat mollitia laborum iusto, tempore repellendus nemo ea sit, voluptate esse voluptates consectetur asperiores quis voluptatibus rerum eaque?</p>
+    </div>
+</div>

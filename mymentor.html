@@ -6,10 +6,12 @@
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
-    <title>Log in</title>
+    <title>Alkitab</title>
 </head>
 <body>
 
+
+<!-- Sprite -->
 <svg style="display: none;">
 
     <symbol id="facebook" viewBox="0 0 24 24">
@@ -26,10 +28,12 @@
 
 </svg>
 
+
+
 <!--##########  Header  ###########-->
 <header class="header">
     <div class="container">
-        <div class="header__inner">
+        <div class="header__inner courses__Hinner">
             <div>
                 <a href="index.html">
                     <img class="header__img" src="img/logo1.png" alt="">
@@ -68,67 +72,49 @@
     </div>
 </header>
 
-<div class="login">
+<div class="mymentor__title">
     <div class="container">
-        <div class="login__inner">
-            <div class="login__image">
-                <img class="login__img" src="img/new_login_img2.png" alt="">
+       <div class="mymentor__title__inner">
+           <div class="mymentor__image"><img src="img/mentor.png" class="mymentor__img" alt=""></div>
+            <div class="mymentor__info">
+                <div class="mymentor__name">John Smith</div>
+                <div class="mymentor__profession">Pastor</div>
+                <div><a href="" class="btn btn-white btn-small">Message me</a></div>
             </div>
-
-            <div class="login__body">
-                <div class="login__title">welcome back</div>
-                <div class="login__form">
-                    <div class="form__title">EMAIL</div>
-                    <input class="login__input" type="text" size="40">
-                </div>
-                <div class="login__form">
-                    <div class="form__title">PASSWORD</div>
-                    <input class="login__input" type="text" size="40">
-                </div>
-                <div class="login__buttons">
-                    <a href="#" class="btn btn-login">Log in</a>
-                    <a href="register.html" class="btn btn-login-register">register now</a>
-                </div>
-            </div>
-        </div>
+       </div><!--   mymentor__title__inner    -->
     </div>
 </div>
 
-<!--##########  Footer  ###########-->
+<div class="container">
+    <div class="mymentor__content">
 
-<div class="footer">
-    <div class="container">
-        <div class="footer__inner">
-            <div class="footer__item">
-            <img class="header__img" src="img/logo2.png" alt="">
+        <div class="mymentor__left">
+            <div class="mymentor__extra">
+            <div class="mymentor__info__item">
+                <div class="mymentor__info__title">Age:</div>
+                <div class="mymentor__info__content">50</div>
             </div>
-            <div class="footer__item">
-                alkitabmail@gmail.com
+            <div class="mymentor__info__item">
+                <div class="mymentor__info__title">Country:</div>
+                <div class="mymentor__info__content">Russia</div>
             </div>
-            <div class="footer__item">
-                Bishkek, Kyrgyzstan
+            <div class="mymentor__info__item">
+                <div class="mymentor__info__title">Language:</div>
+                <div class="mymentor__info__content">Russian</div>
             </div>
-            <div class="social social--footer">
-                        <a class="social__item" href="#" target="_blank">
-                            <svg class="social__icon">
-                                <use xlink:href="#facebook"></use>
-                            </svg>
-                        </a>
-                        <a class="social__item" href="#" target="_blank">
-                            <svg class="social__icon">
-                                <use xlink:href="#instagram"></use>
-                            </svg>
-                        </a>
-                        <a class="social__item" href="#" target="_blank">
-                            <svg class="social__icon">
-                                <use xlink:href="#youtube"></use>
-                            </svg>
-                        </a>
+        </div>
+        <div class="mymentor__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, deserunt, natus. Sequi, quaerat natus, veniam quos ipsa eligendi voluptatibus laboriosam reiciendis quas animi. Vero, repudiandae quibusdam veniam dignissimos molestiae nesciunt?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, inventore illo minima dolorum, beatae cum, adipisci explicabo amet temporibus suscipit repudiandae quibusdam commodi qui laboriosam possimus numquam dolores perferendis laborum!</div>
+        </div>
+        <div class="mymentor__right">
+            <div class="button__delete">
+                <a href="" class="btn btn-red btn-small">Change mentormentor</a>
             </div>
         </div>
     </div>
 </div>
 
 <script src="app.js"></script>
+
+
 </body>
 </html>

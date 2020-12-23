@@ -116,6 +116,55 @@ a {
     bottom: -8px;
 }
 
+.lang__select {
+    background-color: transparent;
+    border: 0;
+    font-size: inherit;
+    font-weight: inherit;
+    opacity: 0.65;
+    margin-left: 10px;
+}
+
+.lang__select:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+/* person menu dropdown
+===========================================================*/
+.person__main__image {
+    cursor: pointer;
+}
+
+.person__menu {
+    display: none;
+    position: absolute;
+    top: 65%;
+    flex-direction: column;
+    text-align: center;
+    background-color: #fff;
+    border: 2px solid #fff;
+    border-radius:10px;
+    padding: 0px 30px;
+    padding-top: 10px;
+    z-index: 999;
+
+
+
+}
+
+.person__menu.show__menu {
+    display: flex;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.person__menu__item {
+    margin-bottom: 10px;
+    color: #000;
+    opacity: .65;
+}
+
 
 /* Intro
 ================*/
@@ -192,15 +241,27 @@ a {
 }
 
 .btn-white {
-     background-color: #fff;
-    text-shadow: 1px 1px 1px #299499;
+    background-color: #fff;
     box-shadow: 1px 1px 1px black;
+    border: 1px solid transparent;
+}
+
+.btn-small {
+    padding: 10px 30px;
 }
 
 .btn-white:hover {
     background-color: #299499;
     color: #fff;
     border: 1px solid #fff;
+}
+
+.btn-red {
+    color: #fff;
+    background-color: #f05959;
+    box-shadow: 1px 1px 1px black;
+    border: 1px solid transparent;
+
 }
 
 .btn-login {
@@ -776,6 +837,7 @@ box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
 .info__mentorimg {
     margin-right: 20px;
     max-width: 60px;
+    border-radius: 50%;
 }
 
 .info__buttons {
@@ -1078,12 +1140,20 @@ box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
 }
 
 .lesson__themes {
-    padding-left: 25px;
+/*    padding-left: 25px;*/
 }
 
 .theme__item {
-    margin-bottom: 10px;
+    padding-left: 25px;
+    padding-bottom: 10px;
+    padding-top: 10px;
     align-items: center;
+    cursor: pointer;
+}
+
+.theme__item.active {
+    background-color: #d9d9d9;
+    border-radius: 10px;
 }
 
 .theme__circle {
@@ -1305,6 +1375,139 @@ box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
     flex-wrap: wrap;
 }
 
+/* collapse
+===========================================================*/
+
+.collapsible {
+    cursor: pointer;
+}
+
+.collactive,
+.collapsible:hover {
+
+}
+
+.collaps__content {
+    max-height: 0;
+    overflow: hidden;
+
+    transition: max-height 0.2s ease-out;
+}
+
+.collaps__content.collshow {
+    max-height: none;
+}
+
+/* My mentor
+================*/
+
+.mymentor__title {
+    background-color: #299499;
+    margin-top: 100px;
+    padding: 40px 0px;
+
+}
+
+.mymentor__title__inner {
+    display: flex;
+    padding: 0 25px;
+}
+
+.mymentor__img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    box-shadow: 1px 1px 1px #000;
+
+    transition: .35s linear;
+}
+
+.mymentor__img:hover {
+    box-shadow: 5px 5px 5px #000;
+}
+
+.mymentor__info {
+    padding-left: 55px;
+}
+
+.mymentor__name {
+    font-size: 52px;
+    font-weight: 700;
+    color: #fff;
+    max-width: 700px;
+    text-shadow: 1px 1px 1px #000;
+}
+
+.mymentor__profession {
+    font-size: 30px;
+    color: #fff;
+    margin-bottom: 10px;
+    max-width: 60%;
+}
+
+.mymentor__content {
+    display: flex;
+    margin-bottom: 100px;
+}
+
+.mymentor__left {
+    width: 60%;
+}
+
+.mymentor__right {
+    display: flex;
+    justify-content: center;
+    width: 40%;
+}
+
+.mymentor__extra {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.mymentor__info__item {
+    display: flex;
+    font-size: 18px;
+    color: #aea9a9;
+}
+
+.mymentor__info__title {
+    margin-right: 10px;
+}
+
+.mymentor__description {
+    color: #424748;
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+.button__delete {
+    margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1318,22 +1521,13 @@ box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
 
 /* Media
 ================*/
-/*#######################      1300px     ###################################*/
+/*########### ############      1300px     ################### ################*/
 
 @media (max-width: 1300px) {
 
 
 
 }
-
-
-
-
-
-
-
-
-
 
 
 /* Media
@@ -1441,7 +1635,10 @@ box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
     .mycourse__item {
         padding: 15px 15px;
         padding-bottom: 0px;
+    }
 
+    .mymentor__content {
+        padding-left: 25px;
     }
 
 }
@@ -1582,6 +1779,7 @@ box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
 
     .info__mentorimg {
         width: 35px;
+
     }
 
     .course__left {
@@ -1795,6 +1993,18 @@ box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
         padding-left: 10px;
     }
 
+    .mymentor__content {
+        display: block;
+        padding: 0 30px;
+    }
+
+    .mymentor__left , .mymentor__right {
+        width: 100%;
+    }
+
+    .mymentor__title {
+        margin-top: 70px;
+    }
 
 }
 
@@ -1833,14 +2043,15 @@ box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
         display: none;
         position: absolute;
         right: 0;
-        padding-right: 20px;
+        padding: 0 20px;
         top: 65%;
         flex-direction: column;
-        text-align: right;
+        text-align: center;
         background-color: #299499;
         padding-bottom: 10px;
         border: 2px solid #fff;
         border-radius:10px;
+
 
 }
     .nav.show {
@@ -1849,17 +2060,38 @@ box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
         border-top-right-radius: 0;
     }
 
+
+
 .nav__link {
     margin-top: 10px;
     color: white;
     font-size: 22px;
     font-weight: 400;
     text-shadow: 2px 2px 2px black;
+    margin-left: 0;
 }
 
     .burger {
         display: block;
 
+    }
+    .person__menu__dropdown {
+
+    }
+
+    .person__menu {
+        right: 0;
+        text-shadow: 0 0 0;
+    }
+
+    .lang__select {
+        margin-top: 10px;
+        color: #fff;
+        text-shadow: 2px 2px 2px black;
+    }
+
+    .lang__option {
+        color: #000;
     }
 
 /*
@@ -2224,6 +2456,22 @@ box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
         padding-left: 0;
     }
 
+    .mymentor__title {
+        padding: 20px 0px;
+    }
+
+    .mymentor__info {
+        padding-left: 20px;
+    }
+
+    .mymentor__name {
+        font-size: 38px;
+    }
+
+    .mymentor__profession {
+        font-size: 25px;
+    }
+
 }
 
 /*#######################      514px      ###################################*/
@@ -2563,7 +2811,38 @@ box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
         padding-left: 0px;
     }
 
+    .mymentor__title__inner {
+        display: block;
+    }
 
+    .mymentor__image {
+        display: flex;
+        justify-content: center;
+    }
+
+    .mymentor__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mymentor__profession {
+
+    }
+
+    .mymentor__content {
+        display: block;
+    }
+
+    .mymentor__extra {
+        display: block;
+        margin-top: 10px;
+    }
+
+    .mymentor__description {
+        margin-top: 10px;
+    }
 
 }
 

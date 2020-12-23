@@ -39,10 +39,26 @@
             <nav class="nav" id="nav">
                 <a class="nav__link" href="courses.html">Courses</a>
                 <a class="nav__link" href="mycourses.html">My Courses</a>
-                <a class="nav__link" href="login.html">Log In</a>
 
-                <a class="nav__link" href="">Languages</a>
-                <a class="nav__link" href=""><img src="img/inkogn.png" width="40px" alt=""></a>
+
+
+
+                <div id="person__menu__dropdown" class="nav__link">
+                    <div id="personDropdown" ><img class="person__main__image" src="img/inkogn.png" width="40px" alt=""></div>
+                    <div id="personMenu" class="person__menu">
+                        <a href="" class="person__menu__item">Settings</a>
+                        <a href="mymentor.html" class="person__menu__item">My mentor</a>
+                        <a href="" class="person__menu__item">Messages</a>
+                        <a class="person__menu__item" href="login.html">Log In</a>
+                    </div>
+                </div>
+                <div>
+                    <select class="lang__select" name="lang" id="">
+                        <option class="lang__option" value="eng">ENGLISH</option>
+                        <option class="lang__option" value="rus">RUSSIAN</option>
+                    </select>
+                </div>
+
             </nav>
 
             <button type="button" class="burger" id="navToggle">
@@ -70,7 +86,7 @@
 
             <div class="info__inner">
                <div class="info__item">
-                   <img class="info__mentorimg" src="img/inkogn.png" alt="">
+                   <img class="info__mentorimg" src="img/guy.png" alt="">
                    <div class="item__data">
                        <div class="item__title">Mentor:</div>
                        <div class="item__text">John Smith</div>

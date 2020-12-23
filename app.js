@@ -19,10 +19,25 @@ $(function() {
     let contentContent = $("#contentContent");
     let descriptionContent = $("#descriptionContent");
     let progressNav = $("#progressNav");
+    let personDropdown = $("#personDropdown");
+    let personMenu = $("#personMenu");
+
     let navProgressBtn = $("#navProgressBtn");
 
 
+    let coll = document.getElementsByClassName('collapsible')
 
+    for (let i = 0; i < coll.length; i++) {
+        coll[i].addEventListener('click', function(){
+            this.classList.toggle('active');
+            let content = this.nextElementSibling;
+            if (content.style.maxHeight) {
+                content.style.maxHeight = null;
+            } else {
+                content.style.maxHeight = content.scrollHeight + 'px'
+            }
+        })
+    }
 
 //    Nav Toggle
 
@@ -78,6 +93,26 @@ $(function() {
         mycoursesInprogress.removeClass("hide");
         finished.removeClass("extra__active");
         inprogress.addClass("extra__active");
+    });
+
+
+
+    $(document).mouseup(function (e){ // событие клика по веб-документу
+        var div = $("#person__menu__dropdown"); // тут указываем ID элемента
+        if (!div.is(e.target) // если клик был не по нашему блоку
+            && div.has(e.target).length === 0) { // и не по его дочерним элементам
+            personMenu.removeClass("show__menu");
+        }
+    });
+
+    personDropdown.on("click", function(event) {
+        event.preventDefault();
+        if (personMenu.hasClass("show__menu")) {
+            personMenu.removeClass("show__menu")
+        } else {
+            personMenu.addClass("show__menu");
+        }
+
     });
 
 })

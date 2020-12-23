@@ -40,10 +40,26 @@
             <nav class="nav" id="nav">
                 <a class="nav__link" href="courses.html">Courses</a>
                 <a class="nav__link" href="mycourses.html">My Courses</a>
-                <a class="nav__link" href="login.html">Log In</a>
 
-                <a class="nav__link" href="">Languages</a>
-                <a class="nav__link" href=""><img src="img/inkogn.png" width="40px" alt=""></a>
+
+
+
+                <div id="person__menu__dropdown" class="nav__link">
+                    <div id="personDropdown" ><img class="person__main__image" src="img/inkogn.png" width="40px" alt=""></div>
+                    <div id="personMenu" class="person__menu">
+                        <a href="" class="person__menu__item">Settings</a>
+                        <a href="mymentor.html" class="person__menu__item">My mentor</a>
+                        <a href="" class="person__menu__item">Messages</a>
+                        <a class="person__menu__item" href="login.html">Log In</a>
+                    </div>
+                </div>
+                <div>
+                    <select class="lang__select" name="lang" id="">
+                        <option class="lang__option" value="eng">ENGLISH</option>
+                        <option class="lang__option" value="rus">RUSSIAN</option>
+                    </select>
+                </div>
+
             </nav>
 
             <button type="button" class="burger" id="navToggle">
@@ -70,18 +86,18 @@
             </div>
             <div class="progress__complete">30% complete</div>
             <div class="progress__lesson">
-                <div class="progress__lesson__title">
-                    <div class="lesson__title">
+                <div class="progress__lesson__title collapsible">
+                    <div class="lesson__title ">
                        <img class="lesson__title__circle" src="img/Ellipse.png" alt="">
                         <div>Lesson 1 (Introduction)</div>
                     </div>
-                    <div class="lesson__themes__count">
+                    <div class="lesson__themes__count ">
                         2/2
                         <img class="lesson__arrow top" width="25px" src="img/arrow_top.png" alt="">
                     </div>
                 </div>
-                <div class="lesson__themes">
-                    <div class="theme__item">
+                <div class="lesson__themes collaps__content collshow">
+                    <div class="theme__item active">
 
                         <div class="theme__title">
                         <img class="theme__circle" src="img/Ellipse.png" alt="">
@@ -110,7 +126,7 @@
             </div> <!--  /.progress__lesson  -->
 
             <div class="progress__lesson">
-                <div class="progress__lesson__title">
+                <div class="progress__lesson__title collapsible">
                     <div class="lesson__title">
                        <img class="lesson__title__circle" src="img/Ellipse.png" alt="">
                         Lesson 2
@@ -120,8 +136,19 @@
                         <img class="lesson__arrow top" width="25px" src="img/arrow_bot.png" alt="">
                     </div>
                 </div>
-                <div class="lesson__themes">
+                <div class="lesson__themes collaps__content">
+                    <div class="theme__item">
 
+                        <div class="theme__title">
+                        <img class="theme__circle" src="img/Ellipse.png" alt="">
+                        Let's continue!</div>
+                        <div class="theme__info">
+                            <div class="theme__info__item">
+                                <img src="img/text.png" alt="">
+                                <div class="theme__info__title">Text</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div> <!--  /.progress__lesson  -->
         </div>
