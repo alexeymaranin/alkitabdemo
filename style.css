@@ -2381,8 +2381,10 @@ box-shadow:         0px 10px 13px 0px rgba(50, 50, 50, 0.46);
     }
 
     .person__menu {
-        right: 0;
+        right: 100%;
+        top: 45%;
         text-shadow: 0 0 0;
+        border: 1px solid #000;
     }
 
     .lang__select {
