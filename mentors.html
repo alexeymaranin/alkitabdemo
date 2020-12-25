@@ -6,10 +6,11 @@
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
-    <title>Register</title>
+    <title>Mentors</title>
 </head>
 <body>
 
+     <!-- Sprite -->
 <svg style="display: none;">
 
     <symbol id="facebook" viewBox="0 0 24 24">
@@ -26,10 +27,10 @@
 
 </svg>
 
-<!--##########  Header  ###########-->
+     <!--##########  Header  ###########-->
 <header class="header">
     <div class="container">
-        <div class="header__inner">
+        <div class="header__inner courses__Hinner">
             <div>
                 <a href="index.html">
                     <img class="header__img" src="img/logo1.png" alt="">
@@ -68,75 +69,57 @@
     </div>
 </header>
 
-<div class="login">
+<div class="mentors">
     <div class="container">
-        <div class="register__inner">
-            <div class="register__image">
-                <img class="register__img" src="img/new_login_img2.png" alt="">
-            </div>
-
-            <div class="register__body">
-                <div class="register__title"><div>Registration</div></div>
-                <div class="register__forms">
-                    <div class="register__user">
-                        <div class="register__form">
-                            <div class="form__title">LOGIN</div>
-                            <input class="login__input" type="text" size="40">
-                        </div>
-                        <div class="register__form">
-                            <div class="form__title">EMAIL</div>
-                            <input class="login__input" type="text" size="40">
-                        </div>
-                        <div class="register__form">
-                            <div class="form__title">PASSWORD</div>
-                            <input class="login__input" type="text" size="40">
-                        </div>
-                        <div class="register__form">
-                            <div class="form__title">REPEAT PASSWORD</div>
-                            <input class="login__input" type="text" size="40">
-                        </div>
+        <div class="mentors__item">
+            <div class="mymentor__image"><img src="img/mentor.png" class="mymentor__img" alt=""></div>
+            <div class="mentors__info">
+                <div class="mymentor__name">John Smith</div>
+                <div class="mymentor__profession">Pastor</div>
+                <div class="mentors__extra">
+                    <div class="mentors__info__item">
+                        <div class="mymentor__info__title">Age:</div>
+                        <div class="mymentor__info__content">50</div>
                     </div>
-                    <div class="register__person">
-                        <div class="register__form">
-                            <div class="form__title">FIRST NAME</div>
-                            <input class="login__input" type="text" size="40">
-                        </div>
-                        <div class="register__form">
-                            <div class="form__title">LAST NAME</div>
-                            <input class="login__input" type="text" size="40">
-                        </div>
-                        <div class="register__form">
-                            <div class="form__title">COUNTRY</div>
-                            <select class="form__select" name="country" id="">
-                                <option value="rus">RUSSIA</option>
-                                <option value="uz">UZBEKISTAN</option>
-                            </select>
-                        </div>
-                        <div class="register__form">
-                            <div class="form__title">LANGUAGE</div>
-                            <select class="form__select" name="country" id="">
-                                <option value="rus">RUSSIAN</option>
-                                <option value="uz">UZBEK</option>
-                            </select>
-                        </div>
-                        <div class="register__form">
-                            <div class="form__title">SEX</div>
-                            <select class="form__select" name="country" id="">
-                                <option value="rus">MALE</option>
-                                <option value="uz">FEMALE</option>
-                            </select>
-                        </div>
-                        <div class="register__form">
-                            <div class="form__title">AGE</div>
-                            <input class="login__input" type="number">
-                        </div>
-                        <div class="register__button">
-                            <a href="#" class="btn btn-login register">Register</a>
-                        </div>
-                    </div> <!--     register__person               -->
-                </div> <!--      register__forms              -->
-            </div> <!--        register__body            -->
-        </div> <!--        register__inner            -->
+                    <div class="mentors__info__item">
+                        <div class="mymentor__info__title">Country:</div>
+                        <div class="mymentor__info__content">Russia</div>
+                    </div>
+                    <div class="mentors__info__item">
+                        <div class="mymentor__info__title">Language:</div>
+                        <div class="mymentor__info__content">Russian</div>
+                    </div>
+        </div>
+                <div class="mentors__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, deserunt, natus. Sequi, quaerat natus, veniam quos ipsa eligendi voluptatibus laboriosam reiciendis quas animi. Vero, repudiandae quibusdam veniam dignissimos molestiae nesciunt?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, inventore illo minima dolorum, beatae cum, adipisci explicabo amet temporibus suscipit repudiandae quibusdam commodi qui laboriosam possimus numquam dolores perferendis laborum!</div>
+                <div><a href="mymentor.html" class="btn btn-white btn-small">Choose mentor</a></div>
+
+            </div>
+        </div>
+
+        <div class="mentors__item">
+            <div class="mymentor__image"><img src="img/guy.png" class="mymentor__img" alt=""></div>
+            <div class="mentors__info">
+                <div class="mymentor__name">Paul Stones</div>
+                <div class="mymentor__profession">Professor</div>
+                <div class="mentors__extra">
+                    <div class="mentors__info__item">
+                        <div class="mymentor__info__title">Age:</div>
+                        <div class="mymentor__info__content">60</div>
+                    </div>
+                    <div class="mentors__info__item">
+                        <div class="mymentor__info__title">Country:</div>
+                        <div class="mymentor__info__content">Uzbekistan</div>
+                    </div>
+                    <div class="mentors__info__item">
+                        <div class="mymentor__info__title">Language:</div>
+                        <div class="mymentor__info__content">Uzbek</div>
+                    </div>
+                </div>
+                <div class="mentors__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, deserunt, natus. Sequi, quaerat natus, veniam quos ipsa eligendi voluptatibus laboriosam reiciendis quas animi. Vero, repudiandae quibusdam veniam dignissimos molestiae nesciunt?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, inventore illo minima dolorum, beatae cum, adipisci explicabo amet temporibus suscipit repudiandae quibusdam commodi qui laboriosam possimus numquam dolores perferendis laborum!</div>
+                <div><a href="mymentor.html" class="btn btn-white btn-small">Choose mentor</a></div>
+
+            </div>
+        </div>
     </div>
 </div>
 
@@ -174,7 +157,7 @@
         </div>
     </div>
 </div>
-
 <script src="app.js"></script>
+
 </body>
 </html>

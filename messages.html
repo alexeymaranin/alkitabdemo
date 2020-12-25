@@ -6,10 +6,11 @@
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
-    <title>Register</title>
+    <title>Messages</title>
 </head>
 <body>
 
+    <!-- Sprite -->
 <svg style="display: none;">
 
     <symbol id="facebook" viewBox="0 0 24 24">
@@ -26,10 +27,10 @@
 
 </svg>
 
-<!--##########  Header  ###########-->
+    <!--##########  Header  ###########-->
 <header class="header">
     <div class="container">
-        <div class="header__inner">
+        <div class="header__inner courses__Hinner">
             <div>
                 <a href="index.html">
                     <img class="header__img" src="img/logo1.png" alt="">
@@ -68,79 +69,67 @@
     </div>
 </header>
 
-<div class="login">
-    <div class="container">
-        <div class="register__inner">
-            <div class="register__image">
-                <img class="register__img" src="img/new_login_img2.png" alt="">
-            </div>
 
-            <div class="register__body">
-                <div class="register__title"><div>Registration</div></div>
-                <div class="register__forms">
-                    <div class="register__user">
-                        <div class="register__form">
-                            <div class="form__title">LOGIN</div>
-                            <input class="login__input" type="text" size="40">
-                        </div>
-                        <div class="register__form">
-                            <div class="form__title">EMAIL</div>
-                            <input class="login__input" type="text" size="40">
-                        </div>
-                        <div class="register__form">
-                            <div class="form__title">PASSWORD</div>
-                            <input class="login__input" type="text" size="40">
-                        </div>
-                        <div class="register__form">
-                            <div class="form__title">REPEAT PASSWORD</div>
-                            <input class="login__input" type="text" size="40">
-                        </div>
+<div class="messages">
+    <div class="container">
+        <div class="messages__inner">
+            <div id="messagesNav" class="messages__nav">
+                <div class="messages__opponent">
+                    <div>
+                        <img src="img/mentor.png" class="opponent__img" alt="">
                     </div>
-                    <div class="register__person">
-                        <div class="register__form">
-                            <div class="form__title">FIRST NAME</div>
-                            <input class="login__input" type="text" size="40">
-                        </div>
-                        <div class="register__form">
-                            <div class="form__title">LAST NAME</div>
-                            <input class="login__input" type="text" size="40">
-                        </div>
-                        <div class="register__form">
-                            <div class="form__title">COUNTRY</div>
-                            <select class="form__select" name="country" id="">
-                                <option value="rus">RUSSIA</option>
-                                <option value="uz">UZBEKISTAN</option>
-                            </select>
-                        </div>
-                        <div class="register__form">
-                            <div class="form__title">LANGUAGE</div>
-                            <select class="form__select" name="country" id="">
-                                <option value="rus">RUSSIAN</option>
-                                <option value="uz">UZBEK</option>
-                            </select>
-                        </div>
-                        <div class="register__form">
-                            <div class="form__title">SEX</div>
-                            <select class="form__select" name="country" id="">
-                                <option value="rus">MALE</option>
-                                <option value="uz">FEMALE</option>
-                            </select>
-                        </div>
-                        <div class="register__form">
-                            <div class="form__title">AGE</div>
-                            <input class="login__input" type="number">
-                        </div>
-                        <div class="register__button">
-                            <a href="#" class="btn btn-login register">Register</a>
-                        </div>
-                    </div> <!--     register__person               -->
-                </div> <!--      register__forms              -->
-            </div> <!--        register__body            -->
-        </div> <!--        register__inner            -->
+                    <div class="opponent__name">John Smith</div>
+                </div>
+                <div class="messages__opponent">
+                    <div>
+                        <img src="img/guy.png" class="opponent__img" alt="">
+                    </div>
+                    <div class="opponent__name">Paul Stones</div>
+                </div> <!--      messages__opponent          -->
+            </div> <!--      messages__nav          -->
+            <div class="messages__content">
+                <div class="messages__title">
+                   <div id="dialogs" class="dialogs"></div>
+                    <div class="messages__title__name2">John Smith</div>
+                    <div><img src="img/mentor.png" class="title__img" alt=""></div>
+                    <div class="messages__title__name">John Smith</div>
+                </div>
+                <div class="messages__messages__area">
+                    <div class="my__message">
+                        <div class="message__date">December 20, 2020, 17:40</div>
+                        <div class="message__text">Hello, my name is Alex!</div>
+                    </div>
+                    <div class="my__message">
+                        <div class="message__date">December 20, 2020, 17:41</div>
+                        <div class="message__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem saepe ex eum soluta, explicabo aperiam provident amet fugiat odio id eveniet quia incidunt porro suscipit quas modi, omnis iste cupiditate?</div>
+                    </div>
+                    <div class="opponent__message">
+                        <div class="message__date">December 20, 2020, 17:42</div>
+                        <div class="message__text">Hello Alex, my name is John!</div>
+                    </div>
+                    <div class="opponent__message">
+                        <div class="message__date">December 20, 2020, 17:43</div>
+                        <div class="message__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem saepe ex eum soluta, explicabo aperiam provident amet fugiat odio id eveniet quia incidunt porro suscipit quas modi, omnis iste cupiditate?</div>
+                    </div>
+                    <div class="my__message">
+                        <div class="message__date">December 20, 2020, 17:40</div>
+                        <div class="message__text">Nice to meet you!</div>
+                    </div>
+                    <div class="my__message">
+                        <div class="message__date">December 20, 2020, 17:41</div>
+                        <div class="message__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem saepe ex eum soluta, explicabo aperiam provident amet fugiat odio id eveniet quia incidunt porro suscipit quas modi, omnis iste cupiditate?</div>
+                    </div>
+                </div> <!--      messages__messages__area          -->
+                <div class="message__input">
+                    <textarea class="text__input" placeholder="Whrite a message..." name="" id="" cols="50" rows="5"></textarea>
+                </div>
+            </div> <!--      messages__content          -->
+        </div> <!--      messages__inner          -->
     </div>
 </div>
 
-<!--##########  Footer  ###########-->
+
+   <!--##########  Footer  ###########-->
 
 <div class="footer">
     <div class="container">
@@ -174,7 +163,7 @@
         </div>
     </div>
 </div>
-
 <script src="app.js"></script>
+
 </body>
 </html>

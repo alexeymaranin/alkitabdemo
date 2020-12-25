@@ -6,10 +6,11 @@
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
-    <title>Register</title>
+    <title>Change profile</title>
 </head>
 <body>
 
+    <!-- Sprite -->
 <svg style="display: none;">
 
     <symbol id="facebook" viewBox="0 0 24 24">
@@ -26,10 +27,10 @@
 
 </svg>
 
-<!--##########  Header  ###########-->
+    <!--##########  Header  ###########-->
 <header class="header">
     <div class="container">
-        <div class="header__inner">
+        <div class="header__inner courses__Hinner">
             <div>
                 <a href="index.html">
                     <img class="header__img" src="img/logo1.png" alt="">
@@ -68,75 +69,62 @@
     </div>
 </header>
 
-<div class="login">
+<div class="profile">
     <div class="container">
-        <div class="register__inner">
-            <div class="register__image">
-                <img class="register__img" src="img/new_login_img2.png" alt="">
+        <div class="profile__inner">
+            <div class="profile__image">
+                <img src="img/inkogn.png" class="profile__img" alt="">
             </div>
-
-            <div class="register__body">
-                <div class="register__title"><div>Registration</div></div>
-                <div class="register__forms">
-                    <div class="register__user">
-                        <div class="register__form">
-                            <div class="form__title">LOGIN</div>
-                            <input class="login__input" type="text" size="40">
-                        </div>
-                        <div class="register__form">
-                            <div class="form__title">EMAIL</div>
-                            <input class="login__input" type="text" size="40">
-                        </div>
-                        <div class="register__form">
-                            <div class="form__title">PASSWORD</div>
-                            <input class="login__input" type="text" size="40">
-                        </div>
-                        <div class="register__form">
-                            <div class="form__title">REPEAT PASSWORD</div>
-                            <input class="login__input" type="text" size="40">
-                        </div>
+            <div class="profile__forms">
+                <div class="proifle__item">
+                    <div class="register__form profile__form">
+                        <div class="form__title">First name</div>
+                        <input class="login__input" type="text" size="40">
                     </div>
-                    <div class="register__person">
-                        <div class="register__form">
-                            <div class="form__title">FIRST NAME</div>
-                            <input class="login__input" type="text" size="40">
-                        </div>
-                        <div class="register__form">
-                            <div class="form__title">LAST NAME</div>
-                            <input class="login__input" type="text" size="40">
-                        </div>
-                        <div class="register__form">
-                            <div class="form__title">COUNTRY</div>
+                    <div class="register__form profile__form">
+                        <div class="form__title">Second name</div>
+                        <input class="login__input" type="text" size="40">
+                    </div>
+                </div>
+            </div> <!--     profile form       -->
+            <div class="profile__forms">
+                <div class="proifle__item">
+                    <div class="register__form profile__form">
+                            <div class="form__title">Country</div>
                             <select class="form__select" name="country" id="">
                                 <option value="rus">RUSSIA</option>
                                 <option value="uz">UZBEKISTAN</option>
                             </select>
                         </div>
-                        <div class="register__form">
-                            <div class="form__title">LANGUAGE</div>
+                    <div class="register__form profile__form">
+                            <div class="form__title">Language</div>
                             <select class="form__select" name="country" id="">
                                 <option value="rus">RUSSIAN</option>
                                 <option value="uz">UZBEK</option>
                             </select>
                         </div>
-                        <div class="register__form">
-                            <div class="form__title">SEX</div>
+                </div>
+            </div> <!--     profile form       -->
+            <div class="profile__forms">
+                <div class="proifle__item">
+                    <div class="register__form profile__form">
+                            <div class="form__title">Sex</div>
                             <select class="form__select" name="country" id="">
                                 <option value="rus">MALE</option>
                                 <option value="uz">FEMALE</option>
                             </select>
                         </div>
-                        <div class="register__form">
+                    <div class="register__form profile__form">
                             <div class="form__title">AGE</div>
                             <input class="login__input" type="number">
                         </div>
-                        <div class="register__button">
-                            <a href="#" class="btn btn-login register">Register</a>
-                        </div>
-                    </div> <!--     register__person               -->
-                </div> <!--      register__forms              -->
-            </div> <!--        register__body            -->
-        </div> <!--        register__inner            -->
+                </div>
+            </div> <!--     profile form       -->
+            <div class="profile__img__input">
+               <div class="form__title">Change image:</div>
+                <input class="img__input" type="file">
+            </div>
+        </div>
     </div>
 </div>
 
@@ -174,7 +162,7 @@
         </div>
     </div>
 </div>
-
 <script src="app.js"></script>
+
 </body>
 </html>

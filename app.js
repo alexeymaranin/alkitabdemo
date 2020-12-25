@@ -24,6 +24,9 @@ $(function() {
 
     let navProgressBtn = $("#navProgressBtn");
 
+    let dialogs = $("#dialogs");
+    let messagesNav = $("#messagesNav");
+
 
     let coll = document.getElementsByClassName('collapsible')
 
@@ -112,6 +115,14 @@ $(function() {
         } else {
             personMenu.addClass("show__menu");
         }
+
+    });
+
+    dialogs.on("click", function(event) {
+        event.preventDefault();
+
+        dialogs.toggleClass("dialogs__active")
+        messagesNav.toggleClass("show_dialogs");
 
     });
 
